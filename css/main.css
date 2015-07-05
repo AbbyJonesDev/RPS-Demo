@@ -1,9 +1,5 @@
 /* @import url(normalize.css); */
 
-body {
-  text-align: center;
-}
-
 body * {
   box-sizing: border-box;
 }
@@ -14,10 +10,28 @@ header {
   font-family: monospace;
   padding: 10px 5px;
   background: yellow;
+  text-align: center;
 }
 
 main {
   padding: 10px;
+  text-align: center;
+}
+
+.play-options {
+  padding-left: 0;
+  display: table;
+  width: 100%;
+}
+
+.play-options li {
+  display: table-cell;
+  width: 50%;
+  border: 2px solid yellow;
+  border-collapse: collapse;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
 }
 
 footer {
@@ -48,7 +62,7 @@ img {
   border-radius: 25px;
 }
 
-#game-start a, .result a {
+.result a {
   font-size: 20px;
   font-weight: bold;
   margin: 20px auto;
